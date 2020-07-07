@@ -34,9 +34,9 @@ class Publisher {
     public static void main(String []args) throws Exception {
 
         String user = env("ACTIVEMQ_USER", "admin");
-        String password = env("ACTIVEMQ_PASSWORD", "password");
+        String password = env("ACTIVEMQ_PASSWORD", "admin");
         String host = env("ACTIVEMQ_HOST", "localhost");
-        int port = Integer.parseInt(env("ACTIVEMQ_PORT", "4848"));
+        int port = Integer.parseInt(env("ACTIVEMQ_PORT", "8080"));
         final String destination = arg(args, 0, "/topic/event");
 
         int messages = 10000;

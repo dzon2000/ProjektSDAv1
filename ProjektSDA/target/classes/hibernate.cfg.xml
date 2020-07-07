@@ -18,6 +18,9 @@
         <property name="hibernate.hbm2ddl.auto">create</property>
         <property name="show_sql">true</property>
         <property name="hibernate.connection.autocommit">true</property>
+        <mapping class="model.Device"/>
+        <mapping class="model.MeteringValues"/>
+
 
     </session-factory>
 </hibernate-configuration>

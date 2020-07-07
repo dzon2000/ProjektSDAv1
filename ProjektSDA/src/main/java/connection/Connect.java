@@ -1,6 +1,7 @@
 package connection;
 
 import Generation.Generator;
+import org.fusesource.mqtt.cli.Publisher;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -17,7 +18,8 @@ public class Connect {
         session.beginTransaction();
         session.close();
         StandardServiceRegistryBuilder.destroy(registry);
-        Generator generator = new Generator();
+
+
 
     }
 
